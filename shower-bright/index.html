@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bright theme for Shower</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=680, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/screen.css">
+</head>
+<body class="list">
+  <!--
+    Debug class on <body> enables
+    cyan grid on slides
+    -->
+  <header class="caption">
+    <h1 color="#242424;">A11y in SPA</h1>
+    <p><a href="https://twitter.com/roman01la">Roman Liutikov</a>,
+      <a href="https://twitter.com/Redradix" style="color:#a50000;">@redradix</a></p>
+  </header>
+
+  <section class="slide"><div>
+    <div class="place">
+      <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Accessibility feature in Angular Material has now been called &quot;absurd&quot;. That&#39;s what I get for checking email.</p>&mdash; Marcy Sutton (@marcysutton) <a href="https://twitter.com/marcysutton/status/615152580386160642">June 28, 2015</a></blockquote>
+    </div>
+  </div></section>
+
+  <section class="slide cover w"><div>
+    <img src="/shower-bright/pictures/a11y-is-absurd.png" alt="Comment on GitHub: This is absurd.. There are projects that don't need aria support.. You should supply a way to disable it and warn that this is disabled.. Adding additional attributes to large amount of elements is extra bytes that I can't allow to have in my project..">
+  </div></section>
+
+  <section class="slide cover w"><div>
+    <img src="/shower-bright/pictures/u-need-aria.png" alt="Comment on GitHub from Eric Eggert: Are your projects used by humans? If they do, they need ARIA support.">
+  </div></section>
+
+  <section class="slide shout" style="background:#fafafa;"><div>
+    <h2 style="color:#000;font-size:80px;line-height:1.4em;">You don't know how many of your users have disabilities</h2>
+  </div></section>
+
+  <section class="slide shout" style="background:#fafafa;"><div>
+    <h2 style="color:#000;font-size:80px;line-height:1.4em;">The more you grow, the more responsibility you carry</h2>
+  </div></section>
+
+  <section class="slide"><div style="text-align:center;">
+
+    <h2><a href="/ng-material">AngularJS</a></h2>
+    <h3><a href="https://docs.angularjs.org/api/ngAria">ngAria</a></h3>
+    <p>Included into Angular Material</p>
+    <img style="margin-top:50px;" src="/shower-bright/pictures/ng-aria-warning.png"
+         alt="ngAria console warning.
+             ARIA: Attribute aria-label, required for accessibility, is missing on node: button.md-fab.md-warn.md-button.md-default-theme">
+
+  </div></section>
+
+  <section class="slide"><div style="text-align:center;">
+
+    <h2><a href="/react-a11y">React</a></h2>
+    <h3><a href="https://github.com/rackt/react-a11y">React A11y</a></h3>
+    <img style="margin-top:50px;width:800px;" src="/shower-bright/pictures/react-a11y-warnings.png"
+         alt="React Accessibility console warnings.
+             Button You have a click handler on a non-interactive element but no `role` DOM property. It will be unclear what this element is supposed to do to a screen-reader user. http://www.w3.org/TR/wai-aria/roles#role_definitions
+             Button You have a click handler on a non-interactive element but no `tabIndex` DOM property. The element will not be navigable or interactive by keyboard users. http://www.w3.org/TR/wai-aria-practices/#focus_tabindex">
+
+  </div></section>
+
+  <section class="slide"><div style="text-align:center;">
+
+    <h2><a href="/react-a11y">Ember.js</a></h2>
+    <h3><a href="https://github.com/trentmwillis/ember-a11y-testing">Ember A11y Testing</a></h3>
+    <img style="margin-top:50px;width:800px;" src="/shower-bright/pictures/ember-a11y-testing-failed-test.png"
+         alt="Ember Accessibility testing failed test.
+             Acceptance: aria-properties: checkAriaRoles passes.
+             Actual: false.
+             Expected: true.
+             Message: A11yError: [object HTMLElement] is required to have the attribute 'aria-checked' when using role='checkbox'">
+
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>A11y Tools</h2>
+    <ul>
+      <li>Chrome's DevTools Accessibility Inspector</li>
+      <li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb">Accessibility Developer Tools Chrome's Extension</a></li>
+      <li><a href="https://github.com/Khan/tota11y/">tota11y</a> by Khan Academy</li>
+      <li><a href="http://wave.webaim.org/">WAVE Web Accessibility Tool</a></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>References</h2>
+    <ul>
+      <li><a href="https://docs.google.com/presentation/d/1JWNEag775-e-fAHbE5wzxwUkzF1kRqmYFlnZP2SdUH0/edit">The Gold Standard: Accessible Web Components</a></li>
+      <li><a href="https://www.youtube.com/watch?v=-XUmf_RPF8k">The Magic of Automated Accessibility Testing @ JSConf US 2015</a></li>
+      <li><a href="https://twitter.com/marcysutton">@marcysutton</a></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Roman Liutikov</h2>
+    <img style="border-radius:2px;" src="/shower-bright/pictures/profile_pic.jpeg" alt="Roman Liutikov's face" width="200">
+    <ul>
+      <li><a href="https://twitter.com/roman01la">@roman01la</a></li>
+      <li><a href="https://github.com/roman01la?tab=repositories">github.com/roman01la</a></li>
+      <li><a href="http://accessibility.org.ua/">accessibility.org.ua</a></li>
+    </ul>
+  </div></section>
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="../shower-core/shower.js"></script>
+  <script async src="/vendor/widgets.js"></script>
+  <!-- Copyright © 2015 Roman Liutikov, Redradix -->
+</body>
+</html>
